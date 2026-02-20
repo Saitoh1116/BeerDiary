@@ -1,0 +1,13 @@
+spring:
+  autoconfigure:
+    url: jdbc:postgresql://localhost:5432/beer_diary
+    username: postgres
+    password: postgre
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+    exclude:
+      -org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
